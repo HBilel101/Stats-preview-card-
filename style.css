@@ -192,5 +192,7 @@ border-bottom-right-radius:15px ;
   @media screen and (max-width:300px) {
       .container {
           width:80vw;
+          padding-bottom:3rem;
       }
+      
   }
