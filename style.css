@@ -15,7 +15,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom:2rem;
 }
 .container {
     display: flex;
@@ -71,6 +70,7 @@ border-bottom-right-radius:15px ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
+    padding-bottom: 2rem;
 }
 .grid-child p {
     font-family: 'Lexend Deca',sans-serif;
