@@ -25,6 +25,7 @@ main {
     width: 1150px;
     border-radius: 15px;
     box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+    text-align: center;
 }
 .image-side {
 height: 100%;
@@ -85,10 +86,10 @@ border-bottom-right-radius:15px ;
     text-align: justify;
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: -8em;
     left: 0;
-   margin: 0 auto;
-    visibility: hidden;
+    width: 80%;
+   display: none;
   }
 
   .attribution a {
@@ -131,8 +132,63 @@ border-bottom-right-radius:15px ;
           align-items: center;
           height: fit-content;
           width: fit-content;
+          margin-top: 4rem;
       }
       .image-side {
           border-radius: 15px 15px 0 0;
+      }
+  }
+  @media screen and (max-width:600px){
+    html{
+        font-size: 13px;
+    }  
+    .container {
+          width:70vw ;
+          text-align: center;
+         
+      }
+      .text-side {
+    padding: 0.5rem 0.7rem;
+      }
+      .grid-container {
+          
+          grid-template-columns: 1fr ;
+          margin: 0 auto;
+          margin-top: 1rem;
+      }
+  }
+  @media screen and (max-width:470px) {
+      html {
+          font-size:11px ;
+      }
+      .container {
+          width: 85%;
+      }
+      .text-side h1 {
+          font-size: 2.5rem;
+      }
+      .text-side p {
+          font-size: 1.5rem;
+      }
+      .grid-container {
+          margin-top: 3.9em;
+      }
+      .grid-child p {
+          font-size:1.5rem ;
+      }
+      .grid-child span {
+          font-size: 2rem;
+      }
+  }
+  @media screen and (max-width:350px) {
+      
+
+    .container {
+        width: 86%;
+    }
+  }
+  @media screen and (max-width:300px) {
+      .container {
+          width:80vw;
       }
   }
